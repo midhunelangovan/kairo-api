@@ -22,6 +22,7 @@ configurations {
 repositories {
 	mavenCentral()
 	mavenLocal()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -43,7 +44,9 @@ dependencies {
 	implementation 'org.mapstruct:mapstruct:1.6.3'
 	annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.3'
 
-	implementation 'io.kals:core-framework:1.0.0'
+//	implementation 'io.kals:core-framework:1.0.0'
+    implementation 'com.github.midhunelangovan:core-framework:v1.0.1'
+
 }
 
 tasks.named('test') {
